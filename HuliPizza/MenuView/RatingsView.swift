@@ -13,7 +13,9 @@ struct RatingsView: View {
         HStack {
             ForEach(0..<4){
                 item in
-                Image("Pizza Slice")
+                Image(systemName: "star.circle")
+                    .font(.headline)
+                    .foregroundColor(Color("G4"))
             }
         }
     }
